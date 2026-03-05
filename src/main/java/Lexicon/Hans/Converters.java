@@ -6,12 +6,12 @@ public class Converters {
         return (celsius*9/5) + 32;
     }
 
-    public static double megaToGiga (int mb) {
-
+    public static double megaToGiga (double mb) {
+        return mb / 1000;
     }
 
     public static hoursToMinute (int hours) {
-
+        return hours * 60;
     }
 
 }
