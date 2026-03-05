@@ -22,16 +22,13 @@ public class Main {
 
             switch (select) {
                 case 1:
-                    input = scanner.nextInt();
-                    Menues.temperatureMenu(input);
+                    Menues.temperatureMenu();
                     break;
                 case 2:
-                    input = scanner.nextInt();
-                    Menues.dataStorageMenu(input);
+                    Menues.dataStorageMenu();
                     break;
                 case 3:
-                    input = scanner.nextInt();
-                    Menues.timeMenu(input);
+                    Menues.timeMenu();
                     break;
                 case 4:
                     nextLoop = false;

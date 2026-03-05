@@ -1,6 +1,5 @@
 package Lexicon.Hans;
 
-import java.util.Scanner;
 
 public class Converters {
 
@@ -24,8 +23,8 @@ public class Converters {
         return hours * 60;
     }
 
-    public static int minuteToHours (int hours) {
-        return hours * 60;
+    public static int minuteToHours (int minutes) {
+        return minutes / 60;
     }
 
 }
