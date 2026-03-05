@@ -22,13 +22,13 @@ public class Main {
 
             switch (select) {
                 case 1:
-                    Menues.temperatureMenu();
+                    Menus.temperatureMenu();
                     break;
                 case 2:
-                    Menues.dataStorageMenu();
+                    Menus.dataStorageMenu();
                     break;
                 case 3:
-                    Menues.timeMenu();
+                    Menus.timeMenu();
                     break;
                 case 4:
                     nextLoop = false;

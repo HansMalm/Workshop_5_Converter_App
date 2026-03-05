@@ -2,12 +2,12 @@ package Lexicon.Hans;
 
 import java.util.Scanner;
 
-public class Menues {
+public class Menus {
 
     public static void temperatureMenu() {
         while (true) {
             Scanner scanner = new Scanner(System.in);
-            System.out.println("Choose:\nC to convert to Celcius.\nF to convert to Fahrenheit.\nB Main Menu.\nInput: ");
+            System.out.println("Choose:\nC to convert to Celsius.\nF to convert to Fahrenheit.\nB Main Menu.\nInput: ");
 
 
         }
