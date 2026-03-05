@@ -10,7 +10,7 @@ public class Converters {
         return mb / 1000;
     }
 
-    public static hoursToMinute (int hours) {
+    public static int hoursToMinute (int hours) {
         return hours * 60;
     }
 

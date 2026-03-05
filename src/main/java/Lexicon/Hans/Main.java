@@ -2,9 +2,6 @@ package Lexicon.Hans;
 
 import java.util.Scanner;
 
-
-
-
 public class Main {
     static void main() {
 
@@ -27,17 +24,23 @@ public class Main {
                 case 1:
                     System.out.print("Input temperature: ");
                     input = scanner.nextInt();
+                    System.out.println(input + " Celsius = " + Converters.celsiusToFahrenheit(input) + " Fahrenheit.");
 
                     break;
                 case 2:
+                    System.out.print("Input megabytes: ");
+                    input = scanner.nextInt();
+                    System.out.println(input + " megabyte = " + Converters.megaToGiga(input) + " gigabyte.");
                     break;
                 case 3:
+                    System.out.print("Input hours: ");
+                    input = scanner.nextInt();
+                    System.out.println(input + " hours = " + Converters.hoursToMinute(input) + " minutes.");
                     break;
                 case 4:
                     nextLoop = false;
+                    System.out.println("\nProgram End.");
             }
-
-            System.out.println("\nProgram End.");
         }
     }
 }
