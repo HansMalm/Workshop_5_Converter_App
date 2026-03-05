@@ -1,16 +1,17 @@
 package Lexicon.Hans;
 
 import java.util.Scanner;
-import java.util.SortedMap;
+
+
+
 
 public class Main {
     static void main() {
 
         Scanner scanner = new Scanner(System.in);
-        int select;
+        int select, input;
         boolean nextLoop = true;
         System.out.println("\nWelcome to The Converter!");
-
 
         while (nextLoop) {
 
@@ -24,6 +25,9 @@ public class Main {
 
             switch (select) {
                 case 1:
+                    System.out.print("Input temperature: ");
+                    input = scanner.nextInt();
+
                     break;
                 case 2:
                     break;
