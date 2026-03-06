@@ -4,12 +4,30 @@ import java.util.Scanner;
 
 public class Menus {
 
+    static Scanner scanner = new Scanner(System.in);
+    static String input;
+    static boolean nextLoop = true;
+
+    private static boolean exitMenu() {
+        return true;
+    }
+
     public static void temperatureMenu() {
-        while (true) {
-            Scanner scanner = new Scanner(System.in);
+        //Scanner scanner = new Scanner(System.in);
+        //String input;
+        //boolean nextLoop = true;
+
+        while (nextLoop) {
             System.out.println("Choose:\nC to convert to Celsius.\nF to convert to Fahrenheit.\nB Main Menu.\nInput: ");
-
-
+            input = scanner.next();
+            if (input.equals("B") || input.equals("b")) {
+                nextLoop = false;
+            } else if (input.equals("C") || input.equals("c")) {
+                System.out.println("Input temperature: ");
+                int temperature = scanner.nextInt();
+                System.out.println(temperature + " Fahrenheit = "
+                        + Converters.fahrenheitToCelsius(temperature) + " Celsius.");
+            }
         }
     }
 

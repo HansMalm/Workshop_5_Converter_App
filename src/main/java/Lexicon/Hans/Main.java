@@ -6,11 +6,11 @@ public class Main {
     static void main() {
 
         Scanner scanner = new Scanner(System.in);
-        int select, input;
-        boolean nextLoop = true;
+        int select;
+        boolean mainLoop = true;
         System.out.println("\nWelcome to The Converter!");
 
-        while (nextLoop) {
+        while (mainLoop) {
 
             System.out.println("\nChoose a unit to convert from the list.");
             System.out.println("1 Temperature: Celsius <-> Fahrenheit.");
@@ -31,7 +31,7 @@ public class Main {
                     Menus.timeMenu();
                     break;
                 case 4:
-                    nextLoop = false;
+                    mainLoop = false;
                     System.out.println("\nProgram End.");
             }
         }
