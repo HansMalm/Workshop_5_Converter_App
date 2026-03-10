@@ -3,6 +3,7 @@ package Lexicon.Hans;
 import java.util.Scanner;
 
 public class Main {
+    //Main Menu App Loop
     static void main() {
 
         Scanner scanner = new Scanner(System.in);

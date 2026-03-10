@@ -2,6 +2,7 @@ package Lexicon.Hans;
 
 import java.util.Scanner;
 
+//Menu Methods
 public class Menus {
 
     static Scanner scanner = new Scanner(System.in);

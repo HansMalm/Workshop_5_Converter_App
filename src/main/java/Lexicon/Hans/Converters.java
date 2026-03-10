@@ -1,6 +1,6 @@
 package Lexicon.Hans;
 
-
+//Converter Methods
 public class Converters {
 
     public static int celsiusToFahrenheit(int celsius) {
