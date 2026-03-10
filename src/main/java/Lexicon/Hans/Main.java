@@ -12,12 +12,13 @@ public class Main {
 
         while (mainLoop) {
 
-            System.out.println("\nChoose a unit to convert from the list.");
-            System.out.println("1 Temperature: Celsius <-> Fahrenheit.");
-            System.out.println("2 Data Storage: MB <-> GB.");
-            System.out.println("3 Time :Hours <-> minutes.");
-            System.out.println("4 Exit program.");
-            System.out.print("Choose option: ");
+            System.out.print("""
+            \nList of units to convert:
+            1 Temperature: Celsius <-> Fahrenheit.
+            2 Data Storage: MB <-> GB.
+            3 Time :Hours <-> minutes.
+            4 Exit program."
+            Choose option:""" + " ");
             select = scanner.nextInt();
 
             switch (select) {

@@ -5,41 +5,100 @@ import java.util.Scanner;
 public class Menus {
 
     static Scanner scanner = new Scanner(System.in);
-    static String input;
+    static String menuInput;
     static boolean nextLoop = true;
-
-    private static boolean exitMenu() {
-        return true;
-    }
+    static int valueInput;
 
     public static void temperatureMenu() {
-        //Scanner scanner = new Scanner(System.in);
-        //String input;
-        //boolean nextLoop = true;
-
         while (nextLoop) {
-            System.out.println("Choose:\nC to convert to Celsius.\nF to convert to Fahrenheit.\nB Main Menu.\nInput: ");
-            input = scanner.next();
-            if (input.equals("B") || input.equals("b")) {
-                nextLoop = false;
-            } else if (input.equals("C") || input.equals("c")) {
-                System.out.println("Input temperature: ");
-                int temperature = scanner.nextInt();
-                System.out.println(temperature + " Fahrenheit = "
-                        + Converters.fahrenheitToCelsius(temperature) + " Celsius.");
+            System.out.println("""
+                    \nChoose From Temperature Menu:
+                    C to convert to Celsius.
+                    F to convert to Fahrenheit.
+                    B Main Menu.
+                    Input:
+                    """ + " ");
+            menuInput = scanner.next();
+
+            switch (menuInput) {
+                case "B":
+                    nextLoop = false;
+                    break;
+                case "C":
+                    System.out.print("\nInput temp in Fahrenheit: ");
+                    valueInput = scanner.nextInt();
+                    System.out.println(valueInput + " F = "
+                            + Converters.fahrenheitToCelsius(valueInput) + " Celsius.");
+                    break;
+                case "F":
+                    System.out.print("\nInput temp in Celsius: ");
+                    valueInput = scanner.nextInt();
+                    System.out.println(valueInput + " C = "
+                            + Converters.celsiusToFahrenheit(valueInput) + " Fahrenheit.");
+                    break;
             }
         }
     }
 
     public static void dataStorageMenu() {
-        while (true) {
-            System.out.println("Input K to convert to KB.\n G to convert to GB.\nB Main Menu.\nInput: ");
+        while (nextLoop) {
+            System.out.println("""
+                    \nChoose From DataStorage Menu:
+                    M to convert to MB.
+                    G to convert to GB.
+                    B Main Menu.
+                    Input:
+                    """ + " ");
+            menuInput = scanner.next();
+
+            switch (menuInput) {
+                case "B":
+                    nextLoop = false;
+                    break;
+                case "M":
+                    System.out.print("\nInput size in Gigabytes: ");
+                    valueInput = scanner.nextInt();
+                    System.out.println(valueInput + " GB = "
+                            + Converters.gigaToMega(valueInput) + " MB.");
+                    break;
+                case "G":
+                    System.out.print("\nInput size in Megabytes: ");
+                    valueInput = scanner.nextInt();
+                    System.out.println(valueInput + " MB = "
+                            + Converters.megaToGiga(valueInput) + " GB.");
+                    break;
+            }
         }
     }
 
     public static void timeMenu () {
-        while (true) {
-            System.out.println("Input H to convert to Hours.\n M to convert to Minutes.\nB Main Menu.\nInput: ");
+        while (nextLoop) {
+            System.out.print("""
+                    \nChoose From Time Menu:
+                    H to convert to Hours.
+                    M to convert to Minutes.
+                    B Main Menu.
+                    Input:
+                    """ + " ");
+            menuInput = scanner.next();
+
+            switch (menuInput) {
+                case "B":
+                    nextLoop = false;
+                    break;
+                case "H":
+                    System.out.print("\nInput time in minutes: ");
+                    valueInput = scanner.nextInt();
+                    System.out.println(valueInput + " min = "
+                            + Converters.minuteToHours(valueInput) + " hours.");
+                    break;
+                case "M":
+                    System.out.print("\nInput time in hours: ");
+                    valueInput = scanner.nextInt();
+                    System.out.println(valueInput + " h = "
+                            + Converters.hoursToMinute(valueInput) + " minutes.");
+                    break;
+            }
         }
     }
 }

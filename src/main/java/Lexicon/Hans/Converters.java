@@ -8,7 +8,7 @@ public class Converters {
     }
 
     public static int fahrenheitToCelsius(int fahrenheit) {
-        return (fahrenheit - 32) * 9 / 5;
+        return (fahrenheit - 32) * 5 / 9;
     }
 
     public static double megaToGiga (double mb) {
