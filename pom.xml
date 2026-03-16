@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>Lexicon.Hans</groupId>
-    <artifactId>Woskhop_5_Converter_App</artifactId>
+    <artifactId>Workshop_5_Converter_App</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
